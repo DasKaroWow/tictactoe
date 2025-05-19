@@ -16,7 +16,7 @@
 1. **Clone the repository:**  
    ```sh
    git clone https://github.com/DasKaroWow/tictactoe.git
-   cd tic-tac-toe
+   cd tictactoe
    ```
 
 2. **Compile and run:**  
