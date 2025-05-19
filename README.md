@@ -31,7 +31,7 @@
 - Enter coordinates in `x y` format (e.g., `2 3`)  
 
 ## 🔹 How It Works  
-- The AI uses **Minimax with Alpha-Beta pruning** for optimal moves.  
+- The AI uses **Minimax** for optimal moves.  
 - The UI refreshes dynamically using ANSI escape codes.  
 
 ## 🔹 Future Improvements  
