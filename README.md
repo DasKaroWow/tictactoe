@@ -15,7 +15,7 @@
 ## 🔹 Installation & Running  
 1. **Clone the repository:**  
    ```sh
-   git clone https://github.com/your-username/tic-tac-toe.git
+   git clone https://github.com/DasKaroWow/tictactoe.git
    cd tic-tac-toe
    ```
 
