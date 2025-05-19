@@ -42,7 +42,9 @@ std::ostream& print(const std::string& s, int32_t x, int32_t y) {
 	if (x < 0) x = COLS - s.length() + x + 1;
 	if (y < 0) y = ROWS + y + 1;
 	move_cursor(x, y);
-	return std::cout << s;
+	std::cout << s;
+    std::cout.flush();
+    return std::cout;
 }
 
 class Game {
@@ -207,6 +209,14 @@ class Game {
 			std::pair<int32_t, int32_t> best_move = find_best_move();
 
 			field[best_move.first][best_move.second] = enemy_figure;
+            print("Thinking", 1, 3);
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
+            print(".", 9, 3);
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
+            print(".", 10, 3);
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
+            print(".", 11, 3);
+            std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 		}
 
 		int32_t game_loop() {
